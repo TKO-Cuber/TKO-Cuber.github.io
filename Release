@@ -1,0 +1,9 @@
+Origin: TKO_Cuber's Repo
+Label: TKO_Cuber's Repo
+Suite: stable
+Version: 1.0
+Codename: tko
+Architectures: iphoneos-arm
+Components: main
+Description: TKO_Cuber's official Jailbreak Repository
+MD5Sum:
