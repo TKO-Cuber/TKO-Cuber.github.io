@@ -12,6 +12,7 @@
 	</dependencies>
 	<descriptionlist>
 		<description>A simple tweak to speed up iOS :)</description>
+		<description>Works from iOS 9.0 all the way up to iOS 11.1.2</description>
 	</descriptionlist>		
 	<changelog>
 		<change>Initial release</change>

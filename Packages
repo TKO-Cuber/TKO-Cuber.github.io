@@ -32,3 +32,22 @@ Description: A simple tweak to remove various elements of SpringBoard. Also my f
 Author: TKO_Cuber
 Name: Ghost
 Depiction: https://tko-cuber.github.io/depictions/?p=com.tko-cuber.ghost
+
+
+
+
+Package: com.tko-cuber.friendlyphone
+Version: 0.0.1-1+debug
+Architecture: iphoneos-arm
+Maintainer: TKO-Cuber
+Filename: debs//com.tko-cuber.friendlyphone_0.0.1-iphoneos-arm.deb
+Size: 3960
+MD5sum: e1a60fe56af5e055482a5c133a8563bc
+SHA1: 675ce4be1d7480f837d273ae3766dcae47a01e9d
+SHA256: c32940520854b26edfdd3f0be55b8311f1ea3e2229a446e24a7e7ba1779309a8
+Section: Tweaks
+Description: Make your phone greet you upon every respring!
+Author: TKO-Cuber
+Name: FriendlyPhone
+Depiction: https://tko-cuber.github.io/depictions/?p=com.tko-cuber.friendlyphone
+Depends: mobilesubstrate
