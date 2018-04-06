@@ -1,14 +1,17 @@
-Package: 
-Section: 
-Maintainer: 
+Package: com.tko-cuber.lightning
+Section: Tweaks
+Maintainer: TKO-Cuber <tko.cuber@gmail.com>
 Architecture: iphoneos-arm
-Version: 
-Depends: mobilesubstrate
-Filename: debs//
-Size: 
-MD5sum: 
-SHA1: 
-SHA256: 
-Description: 
-Name: 
-Author: name <email@email.com>
+Version: 0.0.1-1+debug
+Depends: mobilesubstrate, firmware (>9.0)
+Filename: debs//com.tko-cuber.lightning_0.0.1-9+debug_iphoneos-arm.deb
+Size: 5014
+MD5sum: 7d5942dbbd3ff028df0f787d7405ddc1
+SHA1: d490d2cffc5d5c98eec018a972c12701917012ad
+SHA256: 0dcf262464a3da2cd4f41dfdb1e1bc5fb22a4080b1e96ec64bafeb35284d3b24
+Description: A simple tweak to speed up iOS :)
+Name: Lightning
+Author: TKO-Cuber <tko.cuber@gmail.com>
+Depiction: https://tko-cuber.github.io/depictions/?p=com.tko-cuber.lightning
+
+
