@@ -4,7 +4,7 @@ Maintainer: TKO-Cuber <tko.cuber@gmail.com>
 Architecture: iphoneos-arm
 Version: 0.0.1-1+debug
 Depends: mobilesubstrate, firmware (>9.0)
-Filename: debs//com.tko-cuber.lightning_0.0.1-9+debug_iphoneos-arm.deb
+Filename: debs//com.tko-cuber.lightning_0.0.1-1+debug_iphoneos-arm.deb
 Size: 5014
 MD5sum: 7d5942dbbd3ff028df0f787d7405ddc1
 SHA1: d490d2cffc5d5c98eec018a972c12701917012ad
