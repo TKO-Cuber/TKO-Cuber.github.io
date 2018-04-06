@@ -1,8 +1,9 @@
-Origin: Reposi3
-Label: Reposi3
+Origin: TKO_Cuber's Repo
+Label: TKO_Cuber's Repo
 Suite: stable
 Version: 1.0
-Codename: ios
+Codename: TKO
 Architectures: iphoneos-arm
 Components: main
-Description: Reposi3 - a cydia repo template
+Description: The official Cydia repository of TKO_Cuber
+MD5Sum:
