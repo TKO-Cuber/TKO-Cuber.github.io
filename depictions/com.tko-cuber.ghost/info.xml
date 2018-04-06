@@ -1,0 +1,30 @@
+<package>
+	<id>com.tko-cuber.ghost</id>
+	<name>Ghost</name>
+	<version>0.0.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>10.0</miniOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>mobilesubstrate</package>
+	</dependencies>
+	<descriptionlist>
+		<description>This is my first Jailbreak tweak! This tweak removes the dock background, page dots, carrier name, and lockscreen ui.</description>
+	</descriptionlist>		
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links>
+		<link>
+			<name>/r/jailbreak</name>
+			<url>https://www.reddit.com/r/jailbreak</url>
+			<iconclass>fa fa-reddit</iconclass>
+		</link>
+		<link>
+			<name>My GitHub Page</name>
+			<url>https://github.com/TKO-Cuber</url>
+		</link>
+	</links>
+</package>
