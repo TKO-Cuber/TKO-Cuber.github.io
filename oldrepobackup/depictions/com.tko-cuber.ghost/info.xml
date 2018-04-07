@@ -1,18 +1,17 @@
 <package>
-	<id>com.tko-cuber.lightning</id>
-	<name>Lightning</name>
+	<id>com.tko-cuber.ghost</id>
+	<name>Ghost</name>
 	<version>0.0.1</version>
 	<compatibility>
 		<firmware>
-			<miniOS>9.0</miniOS>
+			<miniOS>10.0</miniOS>
 		</firmware>
 	</compatibility>
 	<dependencies>
 		<package>mobilesubstrate</package>
 	</dependencies>
 	<descriptionlist>
-		<description>A simple tweak to speed up iOS :)</description>
-		<description>Works from iOS 9.0 all the way up to iOS 11.1.2</description>
+		<description>This is my first Jailbreak tweak! This tweak removes the dock background, page dots, carrier name, and lockscreen ui.</description>
 	</descriptionlist>		
 	<changelog>
 		<change>Initial release</change>

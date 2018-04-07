@@ -4,17 +4,14 @@
 	<version>0.0.1</version>
 	<compatibility>
 		<firmware>
-			<miniOS>9.0</miniOS>
-			<otherVersions>unconfirmed</otherVersions>
+			<miniOS>10.0</miniOS>
 		</firmware>
 	</compatibility>
 	<dependencies>
 		<package>mobilesubstrate</package>
 	</dependencies>
 	<descriptionlist>
-		<description>A predominately "friendly" tweak that allows your phone to kindly greet you upon every respring.</description>
-		<description>This tweak will work on iOS 9-11, and might work on iOS 7 and 8. If you want to, go ahead and try it at your own risk.</description>
-		<description>Might also work on iOS 6 with some modifications as well :)</description>
+		<description>A predominately "friendly" tweak that makes your phone greet you upon every respring.</description>
 	</descriptionlist>		
 	<changelog>
 		<change>Initial release</change>

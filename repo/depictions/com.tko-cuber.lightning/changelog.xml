@@ -1,6 +1,8 @@
 <changelog>
 	<changes>
+		<version>1.1-1+debug</version>
+			<change>Ignore the weird version name- this update should fix the update loop :)</change>
 		<version>0.0.1</version>
-		<change>Initial Release</change>
+			<change>Initial Release</change>
 	</changes>
 </changelog>

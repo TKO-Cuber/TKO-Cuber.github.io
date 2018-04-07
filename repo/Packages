@@ -1,17 +1,55 @@
-
 Package: com.tko-cuber.lightning
-Version: 0.0.1-9+debug
+Section: Tweaks
+Maintainer: TKO-Cuber
+Architecture: iphoneos-arm
+Version: 1.1-1+debug
+Depends: mobilesubstrate, firmware (>=9.0)
+Filename: debs//com.tko-cuber.lightning_1.1-1+debug_iphoneos-arm.deb
+Size: 5022
+MD5sum: 631b07451cf99efb0e42bba1a4dae1f9
+SHA1: e07b3f23ad07ce4e0372f21c59387a4b64d30ad5
+SHA256: a1785b1877b055652bd9993bd7e7c6e8fd6e47f43dbeb766ef07dd695d56a029
+Description: A simple tweak to speed up iOS :)
+Name: Lightning
+Author: TKO-Cuber
+Depiction: https://tko-cuber.github.io/depictions/?p=com.tko-cuber.lightning
+
+
+
+
+Package: com.tko-cuber.ghost
+Version: 0.0.1-2+debug
+Depends: mobilesubstrate, firmware (>=8.0)
+Architecture: iphoneos-arm
+Maintainer: TKO_Cuber
+Filename: debs//com.tko-cuber.ghost_0.0.1-2+debug_iphoneos-arm.deb
+Size: 3634
+MD5sum: 86321c291ebbabd1e4fed807e7e5be76
+SHA1: 8273e4aca8685f241bebb3da47944c77e2584b15
+SHA256: 967472cc64865dfc20e5fce2f3eb817c8a532c440fce6b0f8a47265453353bf9
+Section: Tweaks
+Description: A simple tweak to remove various elements of SpringBoard. Also my first tweak! :)
+Author: TKO_Cuber
+Name: Ghost
+Depiction: https://tko-cuber.github.io/depictions/?p=com.tko-cuber.ghost
+
+
+
+
+Package: com.tko-cuber.friendlyphone
+Version: 0.0.1-1+debug
 Architecture: iphoneos-arm
 Maintainer: TKO-Cuber
-Depends: firmware (>9.0), mobilesubstrate
-Filename: ./debs/com.tko-cuber.lightning_0.0.1-1_iphoneos-arm.deb
-Size: 5226
-MD5sum: e3ff1f0cf85a602cc79642fc837ecf81
-SHA1: c3586703b389dad41111fe363266f1e12641b14c
-SHA256: 6b2922b8ecc34930cdc230b6ed1641402ae76ccaf7dee4ace505276b4882b824
+Filename: debs//com.tko-cuber.friendlyphone_0.0.1-iphoneos-arm.deb
+Size: 3960
+MD5sum: e1a60fe56af5e055482a5c133a8563bc
+SHA1: 675ce4be1d7480f837d273ae3766dcae47a01e9d
+SHA256: c32940520854b26edfdd3f0be55b8311f1ea3e2229a446e24a7e7ba1779309a8
 Section: Tweaks
-Description: A simple tweak to speed up iOS :)
+Description: Make your phone greet you upon every respring!
 Author: TKO-Cuber
-Name: Lightning
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.tko-cuber.lightning
+Name: FriendlyPhone
+Depiction: https://tko-cuber.github.io/depictions/?p=com.tko-cuber.friendlyphone
+Depends: mobilesubstrate
+
 
