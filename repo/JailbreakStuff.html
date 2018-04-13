@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
+<head>
+
+  <style>
         #test p {
     margin-top: 25px;
     font-size: 21px;
@@ -32,105 +33,89 @@
         .intro {
           font-size: xx-large;
         }
-		.haha {
-		  margin-top: -1.5em;
-		  }
+        .haha {
+          margin-top: -1.5em;
+          }
         .looks {
-		  margin-top: -1.5em;
-		  }
-	</style>
-    <title>What I know</title>
-  </head>
-  <body>
-    <img src="skank.PNG" />
-    <div id="test">
-      <div class="more">
-        <h1>SwitchBoard</h1>
-		<hr>
-        <p>This section describes everything I know about Apple&#39;s 
-			Internal Prototype firmware, SwitchBoard.</p>
-		<hr><br><br><br><br><br>
-		<h2>The Filesystem</h2>
-		  <div class="haha">
-			<font size="2"><i>I'll have to admit, the filesystem is fun to poke around</i></font>
-		  </div>
-		  <br>
-			<p>Looking at the filesystem itself, SwitchBoard resembles iOS very much.
-				They both have the standard basic filesystem structure, containing 
-				/var, /System, /Library, etc.</p>
-			<p>SwitchBoard does have another folder that stock iOS doesn't have, called 
-			AppleInternal, which holds the internal apps like SwitchBoard.app (more on that later)
-			and Signage.app and stuff.<p>
-		<br><br><br><br>
-		<h2>The Looks</h2>
-			<div class="looks">
-			<font size="2"><i>like iOS' dumber relative</i></font>
-		  </div>
-		  <br>
-        <center>
-          <img src="switch.PNG" width="240" height="300" />
-        </center>
-			<p>Welcome to SwitchBoard.app!</p>
-			<p>Yes, that is what SwitchBoard looks like, at least on a N88AP (3GS). That
-				particular picture is 9B3176n or iOS 5.1 (iPhone2,1_5.1_9B3176n_NonUI.ipsw)
-				on an N88AP (3GS).<p>
-			<p>You can see the various apps on there, some of which very
-				few people have seen before recently, like ThermalDOE</p>
-		<br><br><br><br>
-		<hr>
-		<h2>The Fun Stuff</h2>
-		  <div class="looks">
-			<font size="2"><i>Getting it up and running</i></font>
-		  </div>
-		  <br>
-			<p>Got a copy? Cool. <i>Let's get it running!</i></p>
-			<p>First of all, let's check if you <i>can</i> install it, safely that is.</p>
-			<p><strong>If you have a copy meant for the 3G and you don't like an exploding iPhone 3G, <i>don't install it!</i></strong></p>
-			<p><i>The 3G switchboard (the popular one) has a few very big issues. The icons disappear, and battery expansion is possible,
-					and in rare cases, it can break NVRAM- yikes!</p></i>
-			<p>Now, as long as you have a full IPSW (this part only covers the 3GS BTW- maybe i4 later idk... 
-				you can install any IPSW with kloader, but that's for another day), you're good to go.</p>
-			<br><br><br>
-			<h2>Step One</h2>
-				<div class="looks">
-					<font size="2"><i>Pwning DFU for the restore</i></font>
-				</div>
-				<p>Open Sn0wBreeze, and click ok until you get to the main screen. In the top left corner,
-					click "run iREB". Click no on the popup (is there an ATV2 SwitchBoard?) then follow the 
-					instructions to enter pwned dfu mode. Easy enough.</p>
-			<h2>Step Two</h2>
-				<div class="looks">
-					<font size="2"><i>Restoring</i></font>
-				</div>	
-			<p>Open iTunes. A popup should come up saying it found a phone in recovery mode. good. Shift+Click 
-				restore, then select the switchboard ipsw. Let it restore. If there are errors, check theiphonewiki.
-				They have a ton of help.</p>
-			<h2>Step Three</h2>
-				<div class="looks">
-					<font size="2"><i>Install the Alloc8 exploit</i></font>
-				</div>
-				<p>You'll need linux for this. There are guides online for installing linux off of a USB, check those out.
-					Once you are in linux, download XPWNDFU (search it up- it's on GitHub). Extract the zip, open a terminal in 
-					the XPWNDFU folder containing the file called "setup". Run <code>./setup</code> for it to set up.</p>
-				<p>Now <code>cd</code> into the ipwndfu folder and run <code>sudo ./ipwndfu -p</code> te enter pwned DFU mode.
-					If it fails, unplug the phone and try again. Now run <code>sudo ./ipwndfu -x</code> to install the exploit to NOR,
-					and wait for SwitchBoard to load up!</p>
-				<hr>
-				<h1>More Stuff</h1>
-				<div class="looks">
-					<font size="2"><i>News and stuff</i></font>
-				</div>
-				<br>
-				<h2>iBoot Leak</h2>
-					<p>I was one of the first to see the source code, at least as far as I know.</p>
-					<p>The leak was first discovered around October of 2016, and it was a huge deal. Easily the biggest
-						leak I've ever seen. And I've seen a lot. The code was given around a in small group, and eventually was 
-						leaked to the public, and uploaded to GitHub for everyone. It was instantly DMCA'd by Apple, but mirrors are 
-						still up.</p>
-		
-        <audio autoplay=""></audio>
+          margin-top: -1.5em;
+          }
+  </style>
+  <title>What I know</title>
+</head>
+<body>
+  <img src="skank.PNG">
+  <div id="test">
+    <div class="more">
+      <h1>SwitchBoard</h1>
+      <hr>
+      <p>This section describes everything I know about Apple&#39;s Internal Prototype firmware, SwitchBoard.</p>
+      <hr>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>The Filesystem</h2>
+      <div class="haha">
+        <font size="2"><i>I'll have to admit, the filesystem is fun to poke around</i></font>
+      </div><br>
+      <p>Looking at the filesystem itself, SwitchBoard resembles iOS very much. They both have the standard basic filesystem structure, containing /var, /System, /Library, etc.</p>
+      <p>SwitchBoard does have another folder that stock iOS doesn't have, called AppleInternal, which holds the internal apps like SwitchBoard.app (more on that later) and Signage.app and stuff.</p>
+      <p><br>
+      <br>
+      <br>
+      <br></p>
+      <h2>The Looks</h2>
+      <div class="looks">
+        <font size="2"><i>like iOS' dumber relative</i></font>
+      </div><br>
+      <center>
+        <img height="300" src="switch.PNG" width="240">
+      </center>
+      <p>Welcome to SwitchBoard.app!</p>
+      <p>Yes, that is what SwitchBoard looks like, at least on a N88AP (3GS). That particular picture is 9B3176n or iOS 5.1 (iPhone2,1_5.1_9B3176n_NonUI.ipsw) on an N88AP (3GS).</p>
+      <p></p>
+      <p>You can see the various apps on there, some of which very few people have seen before recently, like ThermalDOE</p><br>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <h2>The Fun Stuff</h2>
+      <div class="looks">
+        <font size="2"><i>Getting it up and running</i></font>
+      </div><br>
+      <p>Got a copy? Cool. <i>Let's get it running!</i></p>
+      <p>First of all, let's check if you <i>can</i> install it, safely that is.</p>
+      <p><strong>If you have a copy meant for the 3G and you don't like an exploding iPhone 3G, <i>don't install it!</i></strong></p>
+      <p><i>The 3G switchboard (the popular one) has a few very big issues. The icons disappear, and battery expansion is possible, and in rare cases, it can break NVRAM- yikes!</i></p>
+      <p>Now, as long as you have a full IPSW (this part only covers the 3GS BTW- maybe i4 later idk... you can install any IPSW with kloader, but that's for another day), you're good to go.</p><br>
+      <br>
+      <br>
+      <h2>Step One</h2>
+      <div class="looks">
+        <font size="2"><i>Pwning DFU for the restore</i></font>
       </div>
+      <p>Open Sn0wBreeze, and click ok until you get to the main screen. In the top left corner, click "run iREB". Click no on the popup (is there an ATV2 SwitchBoard?) then follow the instructions to enter pwned dfu mode. Easy enough.</p>
+      <h2>Step Two</h2>
+      <div class="looks">
+        <font size="2"><i>Restoring</i></font>
+      </div>
+      <p>Open iTunes. A popup should come up saying it found a phone in recovery mode. good. Shift+Click restore, then select the switchboard ipsw. Let it restore. If there are errors, check theiphonewiki. They have a ton of help.</p>
+      <h2>Step Three</h2>
+      <div class="looks">
+        <font size="2"><i>Install the Alloc8 exploit</i></font>
+      </div>
+      <p>You'll need linux for this. There are guides online for installing linux off of a USB, check those out. Once you are in linux, download XPWNDFU (search it up- it's on GitHub). Extract the zip, open a terminal in the XPWNDFU folder containing the file called "setup". Run <code>./setup</code> for it to set up.</p>
+      <p>Now <code>cd</code> into the ipwndfu folder and run <code>sudo ./ipwndfu -p</code> te enter pwned DFU mode. If it fails, unplug the phone and try again. Now run <code>sudo ./ipwndfu -x</code> to install the exploit to NOR, and wait for SwitchBoard to load up!</p>
+      <hr>
+      <h1>More Stuff</h1>
+      <div class="looks">
+        <font size="2"><i>News and stuff</i></font>
+      </div><br>
+      <h2>iBoot Leak</h2>
+      <p>I was one of the first to see the source code, at least as far as I know.</p>
+      <p>The leak was first discovered around October of 2016, and it was a huge deal. Easily the biggest leak I've ever seen. And I've seen a lot. The code was given around a in small group, and eventually was leaked to the public, and uploaded to GitHub for everyone. It was instantly DMCA'd by Apple, but mirrors are still up.</p><audio autoplay="" controls=""><source src="dreamin.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio>
     </div>
-  </body>
+  </div>
+</body>
 </html>
-
