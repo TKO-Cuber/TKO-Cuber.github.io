@@ -66,6 +66,6 @@ SHA256: 9cc7f87d3588b6698980018b50af13166a48652325a3519a770d9becfa5d3207
 Section: Tweaks
 Description: Complete that cool look by "undocking" the dock, that is, hiding it.
 Author: TKO-Cuber
-Name: Lightning
+Name: DockUndock
 Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.tko-cuber.dockundock
 Depends: mobilesubstrate, firmware (>=7.0)
