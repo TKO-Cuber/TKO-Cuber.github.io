@@ -1,22 +1,3 @@
-Package: com.tko-cuber.lightning
-Section: Tweaks
-Maintainer: TKO-Cuber
-Architecture: iphoneos-arm
-Version: 1.1-1+debug
-Depends: mobilesubstrate, firmware (>=9.0)
-Filename: debs//com.tko-cuber.lightning_1.1-1+debug_iphoneos-arm.deb
-Size: 5022
-MD5sum: 631b07451cf99efb0e42bba1a4dae1f9
-SHA1: e07b3f23ad07ce4e0372f21c59387a4b64d30ad5
-SHA256: a1785b1877b055652bd9993bd7e7c6e8fd6e47f43dbeb766ef07dd695d56a029
-Description: A simple tweak to speed up iOS :)
-Name: Lightning
-Author: TKO-Cuber
-Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.tko-cuber.lightning
-
-
-
-
 Package: com.tko-cuber.ghost
 Version: 0.0.1-2+debug
 Depends: mobilesubstrate, firmware (>=8.0)
@@ -69,3 +50,21 @@ Author: TKO-Cuber
 Name: DockUndock
 Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.tko-cuber.dockundock
 Depends: mobilesubstrate, firmware (>=7.0)
+
+
+
+Package: com.tko-cuber.lightning
+Version: 1.1-1+debug
+Architecture: iphoneos-arm
+Maintainer: TKO-Cuber
+Filename: debs//com.tko-cuber.lightning_1.1-1+debug_iphoneos-arm.deb
+Size: 5022
+MD5sum: 631b07451cf99efb0e42bba1a4dae1f9
+SHA1: e07b3f23ad07ce4e0372f21c59387a4b64d30ad5
+SHA256: a1785b1877b055652bd9993bd7e7c6e8fd6e47f43dbeb766ef07dd695d56a029
+Section: Tweaks
+Description: A simple tweak to speed up iOS :)
+Author: TKO-Cuber
+Name: Lightning
+Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.tko-cuber.lightning
+Depends: firmware (>=9.0), mobilesubstrate
