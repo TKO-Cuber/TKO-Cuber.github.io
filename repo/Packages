@@ -53,3 +53,19 @@ Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.tko-cuber.friendly
 Depends: mobilesubstrate
 
 
+
+Package: com.tko-cuber.dockundock
+Version: 0.0.1-1+debug
+Architecture: iphoneos-arm
+Maintainer: TKO-Cuber
+Filename: debs//com.tko-cuber.dockundock_0.0.1-1+debug_iphoneos-arm.deb
+Size: 4536
+MD5sum: 668cf4ab35df3d64bcc0abb2b1085ae1
+SHA1: cdfccce0b4bb1e1c58cefab0ed1c244d6ce9e1ab
+SHA256: 9cc7f87d3588b6698980018b50af13166a48652325a3519a770d9becfa5d3207
+Section: Tweaks
+Description: Complete that cool look by "undocking" the dock, that is, hiding it.
+Author: TKO-Cuber
+Name: Lightning
+Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.tko-cuber.dockundock
+Depends: mobilesubstrate, firmware (>=7.0)
