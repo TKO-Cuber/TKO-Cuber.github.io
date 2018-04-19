@@ -1,0 +1,9 @@
+Package: com.tko-cuber.friendlyphone
+Name: FriendlyPhone
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Make your phone greet you upon every respring!
+Maintainer: TKO-Cuber
+Author: TKO-Cuber
+Section: Tweaks

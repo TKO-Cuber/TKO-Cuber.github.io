@@ -1,0 +1,9 @@
+Package: com.tko-cuber.dockundock
+Name: DockUndock
+Depends: firmware (>= 7.0), mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Complete that cool look by "undocking" the dock, that is, hiding it.
+Maintainer: TKO-Cuber
+Author: TKO-Cuber
+Section: Tweaks
