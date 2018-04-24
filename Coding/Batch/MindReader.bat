@@ -6,6 +6,7 @@ set /p string="Enter any combination of numbers or letters and I will guess it: 
 timeout /t 2 /nobreak > NUL
 cls
 
+
 set loop=0
 
 :loop
