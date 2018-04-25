@@ -1,0 +1,3 @@
+[submodule "Coding/Programs/eth3r"]
+	path = Coding/Programs/eth3r
+	url = https://github.com/TKO-Cuber/eth3r.git
