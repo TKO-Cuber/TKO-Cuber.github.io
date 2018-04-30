@@ -68,3 +68,8 @@ Author: TKO-Cuber
 Name: Lightning
 Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.tko-cuber.lightning
 Depends: firmware (>=9.0), mobilesubstrate
+
+
+
+
+Package: com.tko_cuber.ghost

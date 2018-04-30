@@ -1,0 +1,39 @@
+#!/bin/bash
+
+
+#       iDeb
+#         by TKO-Cuber
+#
+#        A nice and intuitive bash script used for
+#        adding .deb files to a Cydia repository.
+
+echo " "
+echo "What is the name of the tweak you'd like to add to the repo?"
+read tweak
+
+
+
+# Variables- change as you'd like to suit your repository
+deb_path='/home/tko/jailbreaking/tko-cuber.github.io/repo/debs'
+author=TKO_Cuber
+lowercase_tweak="$(echo "$tweak" | tr '[:upper:]' '[:lower:]')"
+lowercase_author="$(echo "$author" | tr '[:upper:]' '[:lower:]')"
+
+
+
+echo " "
+echo "What is the name of the .deb file you'd like to add to the repo today?"
+  read file
+  cp $file $deb_path
+  version="$(echo "$file" | awk -F'[_]' '{print $4}')"
+  echo $version
+  echo " "
+echo "Adding entry to packages"
+  cd $deb_path
+  cd ..
+  echo >> Packages
+  echo >> Packages
+  echo "Package: com."$lowercase_author"."$lowercase_tweak"" >> Packages
+  packageid="com."$lowercase_author"."$lowercase_tweak""
+  part1="$(echo "${file#*_}")"
+  echo "${part1%_*}" >> Packages
