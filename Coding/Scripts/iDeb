@@ -14,10 +14,12 @@ read tweak
 
 
 # Variables- change as you'd like to suit your repository
-deb_path='/home/tko/jailbreaking/tko-cuber.github.io/repo/debs'
+deb_path='/home/TKO/tko-cuber.github.io/repo/debs'
+repo_path='/home/TKO/tko-cuber.github.io/repo/'
 author=TKO_Cuber
 lowercase_tweak="$(echo "$tweak" | tr '[:upper:]' '[:lower:]')"
 lowercase_author="$(echo "$author" | tr '[:upper:]' '[:lower:]')"
+section=Tweaks
 
 
 
@@ -26,14 +28,37 @@ echo "What is the name of the .deb file you'd like to add to the repo today?"
   read file
   cp $file $deb_path
   version="$(echo "$file" | awk -F'[_]' '{print $4}')"
-  echo $version
+  echo "$version"
   echo " "
-echo "Adding entry to packages"
+echo "Getting description"
   cd $deb_path
+  dpkg-deb -e $deb_path/$file deb
+  cd deb
+  cp control ..
   cd ..
   echo >> Packages
   echo >> Packages
+  sed -n '5,6p' control >> $repo_path/Packages
+  rm -rf deb
+echo "Adding entry to packages"
+  cd $deb_path
+  cd ..
   echo "Package: com."$lowercase_author"."$lowercase_tweak"" >> Packages
   packageid="com."$lowercase_author"."$lowercase_tweak""
   part1="$(echo "${file#*_}")"
-  echo "${part1%_*}" >> Packages
+  echo "Version: ${part1%_*}" >> Packages
+  echo "Architecture: iphoneos-arm" >> Packages
+  echo "Filename: debs//$file" >> Packages
+  cd $deb_path
+  size="$(stat -c%s $file)"
+  cd ..
+  echo "Size: $size" >> Packages
+  cd $deb_path
+  md5=($(md5sum $file))
+  sha1=($(sha1sum $file))
+  sha256=($(sha256sum $file))
+  cd ..
+  echo "MD5sum: $md5" >> Packages
+  echo "SHA1sum: $sha1" >> Packages
+  echo "SHA256sum: $sha256" >> Packages
+  echo "Section: $section" >> Packages
