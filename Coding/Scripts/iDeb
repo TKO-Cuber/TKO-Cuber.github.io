@@ -7,11 +7,24 @@
 #        A nice and intuitive bash script used for
 #        adding .deb files to a Cydia repository.
 
+
+if [[ ! -z "$deb_path" ]]; then
+  echo "What is path to your repo's deb files?"
+  read deb_path
+fi
+if [[ ! -z "$repo_path" ]]; then
+  echo "What is path to your repo itself?"
+  read repo_path
+fi
+if [[ ! -z "$author" ]]; then
+  echo "What is your name (Author)?"
+  read author
+fi
+
+clear
 echo " "
 echo "What is the name of the tweak you'd like to add to the repo?"
 read tweak
-
-
 
 # Variables- change as you'd like to suit your repository
 deb_path='/home/TKO/tko-cuber.github.io/repo/debs'
@@ -28,31 +41,32 @@ echo "What is the name of the .deb file you'd like to add to the repo today?"
   read file
   cp $file $deb_path
   version="$(echo "$file" | awk -F'[_]' '{print $4}')"
-  echo "$version"
+  #echo "$version"
   echo " "
 echo "Getting description"
+  cd $repo_path
+  echo >> Packages
+  echo >> Packages
   cd $deb_path
   dpkg-deb -e $deb_path/$file deb
   cd deb
   cp control ..
   cd ..
-  echo >> Packages
-  echo >> Packages
-  sed -n '5,6p' control >> $repo_path/Packages
+  sed -n '1,9p' control >> $repo_path/Packages
   rm -rf deb
 echo "Adding entry to packages"
   cd $deb_path
   cd ..
-  echo "Package: com."$lowercase_author"."$lowercase_tweak"" >> Packages
+  #echo "Package: com."$lowercase_author"."$lowercase_tweak"" >> Packages
   packageid="com."$lowercase_author"."$lowercase_tweak""
   part1="$(echo "${file#*_}")"
-  echo "Version: ${part1%_*}" >> Packages
-  echo "Architecture: iphoneos-arm" >> Packages
+  #echo "Version: ${part1%_*}" >> Packages
+  #echo "Architecture: iphoneos-arm" >> Packages
   echo "Filename: debs//$file" >> Packages
-  cd $deb_path
-  size="$(stat -c%s $file)"
-  cd ..
-  echo "Size: $size" >> Packages
+  #cd $deb_path
+  #size="$(stat -c%s $file)"
+  #cd ..
+  #echo "Size: $size" >> Packages
   cd $deb_path
   md5=($(md5sum $file))
   sha1=($(sha1sum $file))
@@ -61,4 +75,16 @@ echo "Adding entry to packages"
   echo "MD5sum: $md5" >> Packages
   echo "SHA1sum: $sha1" >> Packages
   echo "SHA256sum: $sha256" >> Packages
-  echo "Section: $section" >> Packages
+  #echo "Section: $section" >> Packages
+  echo "Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.$lowercase_author.$lowercase_tweak" >> Packages
+echo "Making depiction"
+  cd $repo_path
+  cd depictions
+  mkdir com.$lowercase_author.$lowercase_tweak
+  cd com.tko-cuber.ghost
+  cp changelog.xml ..
+  cp info.xml ..
+  cd ..
+  cp info.xml com.$lowercase_author.$lowercase_tweak
+  cp changelog.xml com.$lowercase_author.$lowercase_tweak
+  cd com.$lowercase_author.$lowercase_tweak
