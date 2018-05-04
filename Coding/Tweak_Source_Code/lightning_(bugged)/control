@@ -1,10 +1,9 @@
 Package: com.tko-cuber.lightning
 Name: Lightning
 Depends: firmware (>= 9.0), mobilesubstrate
+Version: 1.1
 Architecture: iphoneos-arm
-Description: An awesome tweak to speed up iOS!
+Description: A simple tweak to speed up iOS :)
 Maintainer: TKO-Cuber
 Author: TKO-Cuber
 Section: Tweaks
-Version: 0.0.1-1+debug
-Installed-Size: 136

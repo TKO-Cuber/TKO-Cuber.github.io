@@ -34,6 +34,8 @@ lowercase_tweak="$(echo "$tweak" | tr '[:upper:]' '[:lower:]')"
 lowercase_author="$(echo "$author" | tr '[:upper:]' '[:lower:]')"
 section=Tweaks
 
+dir=`pwd`
+
 
 
 echo " "
@@ -73,8 +75,8 @@ echo "Adding entry to packages"
   sha256=($(sha256sum $file))
   cd ..
   echo "MD5sum: $md5" >> Packages
-  echo "SHA1sum: $sha1" >> Packages
-  echo "SHA256sum: $sha256" >> Packages
+  echo "SHA1: $sha1" >> Packages
+  echo "SHA256: $sha256" >> Packages
   #echo "Section: $section" >> Packages
   echo "Depiction: https://tko-cuber.github.io/repo/depictions/?p=com.$lowercase_author.$lowercase_tweak" >> Packages
 echo "Making depiction"
@@ -88,3 +90,12 @@ echo "Making depiction"
   cp info.xml com.$lowercase_author.$lowercase_tweak
   cp changelog.xml com.$lowercase_author.$lowercase_tweak
   cd com.$lowercase_author.$lowercase_tweak
+echo 'Making Packages.bz2'
+  cd $repo_path
+  cp Packages Packages_
+  mv Packages_ debs
+  bzip2 Packages
+  cd debs
+  mv Packages_ ..
+  cd ..
+  mv Packages_ Packages

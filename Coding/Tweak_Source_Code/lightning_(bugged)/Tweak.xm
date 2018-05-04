@@ -14,10 +14,10 @@
   -(void)applicationDidFinishLaunching:(id)application {
     %orig;
 
-  if ([[NSFileManager defaultManager] fileExistsAtPath:@"/var/mobile/Documents/TKO-Cuber/Lightning"])
+  if ([[NSFileManager defaultManager] fileExistsAtPath:@"/var/mobile/Documents/.tko_unofficial"])
     {
         UIAlertView *alert1 = [[UIAlertView alloc] initWithTitle:@"Unoffocial Copy"
-        message:@"Hey there! It would appear you are using an unofficial copy of Lightning! The tweak will continue to work, but please consider geting the official version from https://tko-cuber.github.io/. Tweaks from pirate repos are often outdated and unstable, so do yourself a favor and reinstall it from my repo. Most, if not all my tweaks are fre, so it does you no harm at all :)"
+        message:@"Hey there! It would appear you are using an unofficial copy of Lightning! The tweak will continue to work, but please consider geting the official version from https://tko-cuber.github.io/"
         delegate:self
         cancelButtonTitle:@"Thanks TKO"
         otherButtonTitles:nil];
@@ -27,7 +27,7 @@
       }
     }
   %end
-//end my bad DRM message thingy
+//end my bad DRM
 
   %hook SBAnimationFactorySettings
 

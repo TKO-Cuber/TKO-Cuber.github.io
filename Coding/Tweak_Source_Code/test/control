@@ -1,9 +1,0 @@
-Package: com.yourcompany.test
-Name: test
-Depends: firmware (>= 9.0), mobilesubstrate
-Version: 0.0.1
-Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: Tom O'Donnell
-Author: Tom O'Donnell
-Section: Tweaks

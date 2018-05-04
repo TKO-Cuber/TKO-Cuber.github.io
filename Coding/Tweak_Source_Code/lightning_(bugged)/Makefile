@@ -1,7 +1,7 @@
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = test
-test_FILES = Tweak.xm
+TWEAK_NAME = Lightning
+Lightning_FILES = Tweak.xm
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 

@@ -9,23 +9,26 @@
 
   # Variables
     name=Lightning
-    location=/var/lib/dpkg/info/com.tko-cuber.lightning.list
+    location=/var/lib/dpkg/info/com.tko-cuber.dockundock.list
     author=TKO-Cuber
     method=downloading
     bad="from an unofficial repository"
-    official_source=https://tko-cuber.github.io
+    official_source=https://tko-cuber.github.io/repo
+
+    # Don't modify this
+    list=/var/mobile/Documents/$name
 
   # Thank you
-echo ""
-echo ""
-echo "Thank you for $method $name!"
-echo "By $author"
-echo ""
-echo ""
+echo "                 $name                   "
+echo '========================================='
+echo "      Thank you for $method $name!       "
+echo "               By $author                "
+echo '========================================='
+echo '  '
 
 
   # DRM
-  if [ ! -f $location ]; then
+  if [ ! -a $location ]; then
       echo ""
       echo ""
       echo ":("
@@ -33,6 +36,17 @@ echo ""
       echo "please reinstall $name from the official source..."
       echo "$official_source"
       cd /var/mobile/Documents
-      echo " " >.is_unofficial
+      mkdir $author
+      cd $author
+      echo > $name
       cd ../../..
+  fi
+
+  # If the tweak is from the official repository
+  # Then we go ahead and remove the 'unoffical' notice
+  if [ -a $location ]; then
+      cd $list
+      rm $name
+      cd ..
+      rm $author
   fi
