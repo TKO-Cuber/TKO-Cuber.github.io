@@ -1,10 +1,9 @@
 Package: com.tko-cuber.playcli
 Name: playcli
 Depends: mobilesubstrate
+Version: 1.0.0
 Architecture: iphoneos-arm
 Description: A command-line tool to play audio files (requires MobileSubstrate for communication with audio playback via SpringBoard though).
 Maintainer: TKO-Cuber
 Author: ArtikusHG
 Section: System
-Version: 1.0.0-3+debug
-Installed-Size: 364
